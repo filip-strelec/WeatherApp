@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:text="Stisni"
+        android:onClick="weather"
+        android:textColor="#fdfbee"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:onClick="restart"
+        android:text="reset"
+        android:textColor="#fdfbee"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:layout_above="@+id/editText"
+
+
+         />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="12"
+        android:inputType="text"
+
+        android:text=""
+        android:textColor="#ffff"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/upisiIme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upiši ime grada"
+        android:textColor="#fdfbee"
+        android:textSize="29sp"
+        android:layout_above="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="11dp" />
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="70dp"
+    android:layout_marginBottom="120dp"
+
+    >
+
+    <TextView
+        android:id="@+id/result"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#fdfbee"
+        android:textSize="19sp"
+
+        android:layout_alignParentStart="true"
+
+        />
+
+
+
+</ScrollView>
+
+    <ImageView
+        android:id="@+id/filip"
+        android:layout_width="170dp"
+        android:layout_height="270dp"
+
+        android:layout_above="@+id/upisiIme"
+        android:layout_alignEnd="@+id/button"
+
+        android:layout_marginEnd="39dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/filip1"
+        android:onClick="fGumb" />
+
+    <ImageView
+        android:id="@+id/anja"
+        android:layout_width="170dp"
+        android:layout_height="270dp"
+
+        android:layout_alignTop="@+id/filip"
+
+        android:layout_marginStart="-30dp"
+        android:layout_toEndOf="@+id/filip"
+        android:background="@drawable/anja1"
+        android:onClick="aGumb" />
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Vremenska Prognoza"
+        android:textColor="#fdfbee"
+        android:textSize="29sp" />
+
+
+
+
+</RelativeLayout>
