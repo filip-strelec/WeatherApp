@@ -1,3 +1,3 @@
 # WeatherApp
 Weather app i made for my mum. Feel free to download if you think this code could help in your project...
-(little bit of json parsing, setters getters...)
+(little bit of json, setters getters...)
